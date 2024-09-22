@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto Serif", serif;
+}
+
+.main_bg_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header_bg_container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.header_heading{
+    font-size: 30px;
+    color: orangered;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+span{
+    color: #ffffff;
+}
+
+.header_heading:hover{
+    color: #ffffff;
+    text-shadow: 0px 0px 50px orangered, 0px 0px 80px orangered;
+}
+
+span:hover{
+    color: orangered;
+    text-shadow: 0px 0px 50px orangered, 0px 0px 80px orangered;
+}
+
+.nav_header_link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.anchor_link{
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.anchor_link:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    cursor: pointer;
+}
+
+.actived{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    cursor: pointer;
+}
+
+.contact_btn{
+    width: 120px;
+    height: 45px;
+    border-width: 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact_btn:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0  20px black;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.dropdown .links a:hover{
+    background-color: rgb(211,3,3);
+}
+
+
+.section_bg_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    width: 100%;
+    height: 550px;
+    margin-top: 45px;
+}
+
+.section_bg_content_contianer{
+    margin-right: 35px;
+    width: 450px;
+}
+
+.section_content_heading{
+    font-size: 36px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.span_heading{
+    color: orangered;
+}
+
+.section_content_para{
+    line-height: 1.5;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #000000;
+}
+
+.hire_me{
+    width: 120px;
+    height: 35px;
+    background-color: #000000;
+    border-width: 0px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hire_me:hover{
+    box-shadow: 0px 0px 16px #bfbfbf;
+}
+
+.experience{
+    background-color: orangered;
+}
+.btn{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: rgb(211,3,3);
+    color: rgb(82, 38, 212);
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.button:hover{
+    scale: 1.1;
+    color: rgb(211,3,3);
+    border: 2px solid rgb(211,3,3);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px 5px rgb(211,3,3);
+}
+
+
+.image{
+    border-radius: 15%;
+    height: 450px;
+    width: 350px;
+    margin-left: 25px;
+    transition: border-radius 1.5s ease;
+    cursor: pointer;
+}
+
+
+.image:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 30px orangered, 0 0 50px orangered;
+}
+
+.section_bg_containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    width: 100%;
+    height: 550px;
+    background-color: #000000;
+}
+
+.section_bg_content_contianers{
+    margin-left: 35px;
+    width: 450px;
+}
+
+.section_content_headings{
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.section_content_paras{
+    line-height: 1.5;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+.images{
+    border-radius: 50%;
+    height: 450px;
+    width: 350px;
+    margin-right: 25px;
+    box-shadow: 0 0 36px orangered;
+    transition: border-radius 1.5s ease;
+}
+
+.images:hover{
+    border-radius: 20%;
+    box-shadow: 0 0 36px rgb(255, 254, 254);
+}
+
+
+/* General styling for the education section */
+#education {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 40px;
+}
+
+/* Style for the education card */
+.education-card {
+    background-color: #73a2e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    list-style: none;
+    width: 100%; /* Increased card width */
+    margin-top: 20px;
+}
+
+/* Styling for headings and text inside the card */
+.education-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #107a24;
+}
+
+.education-card p {
+    font-size: 16px;
+    color: #de5f16;
+    line-height: 1.6;
+}
+
+.education-card strong {
+    color: #000;
+}
+
+/* Optional: Center the education section */
+#education ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Style for the heading */
+.heading {
+    font-size: 36px;
+    text-align: center;
+    color: #af0e0e;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+/* Section container styling */
+.section-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Content section styling */
+.section-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Style for each skill */
+.section-content h6 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for each skill */
+.section-content h6:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge text */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+         /* General styling for the Projects section */
+#projects {
+    padding: 40px;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Section heading styling */
+#projects h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #900b77;
+    margin-bottom: 30px;
+}
+
+/* Project card container */
+#projects ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+}
+
+/* Styling for each project card */
+#projects ol li {
+    background-color: #0f063b;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    list-style: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect for project cards */
+#projects ol li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for project titles */
+#projects ol li h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Styling for project description */
+#projects ol li ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+#projects ol li ul li {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Link styling for project */
+#projects ol li ul li a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#projects ol li ul li a:hover {
+    text-decoration: underline;
+    color: #1e73a7;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #projects ol {
+        flex-direction: column;
+    }
+}
+
+
+
+.contact_bg_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.contact_bg_container_heading{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 450px;
+    padding: 30px;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input_name{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 6px;
+    outline: none;
+    border-width: 0px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    background-color: #bfbfbf;
+}
+
+.input:hover{
+    box-shadow: 0 0 20px #000000;
+}
+
+.textarea{
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #bfbfbf;
+    border-radius: 6px;
+    border-width: 0px;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.textarea:hover{
+    box-shadow: 0 0 20px #000000;
+}
+
+.submit_btn{
+    height: 35px;
+    width: 120px;
+    align-self: center;
+    margin: 8px 0;
+    border-width: 0px;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.submit_btn:hover{
+    background-color: orangered;
+    color: #ffffff;
+    box-shadow: 0 0 30px orangered;
+}
+
+.footer_bg_contianer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #000000;
+}
+
+.font_awsome_contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font_awsome{
+    font-size: 35px;
+    margin-right: 25px;
+    color: white;
+}
+
+.font_awsome:hover{
+    box-shadow: 0 0 30px rgba(248, 6, 6, 0.8);
+    font-size: 45px;
+}
+
+.un_order_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.un_order_list_items{
+    color: orangered;
+    margin-right: 25px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.un_order_list_items:hover{
+    color: #ffffff;
+    border-bottom: 2px solid orangered;
+}
